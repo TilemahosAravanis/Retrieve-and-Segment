@@ -1,0 +1,47 @@
+_base_: "default.yml"
+defaults:
+  - _self_
+
+seed: 0
+model_name: maskclip
+model:
+  type: MaskClip
+  clip_model: "ViT-B-16"
+
+  backbone:
+    img_size: 224
+    patch_size: 16
+
+  decode_head:
+    type: MaskClipHead
+    in_channels: 768
+    text_channels: 512
+    align_corners: False
+    use_templates: True
+    pretrained: laion2b_s34b_b88k
+
+output: ""
+
+evaluate:
+  eval_only: true
+
+  task:
+    - voc
+    - context
+    - coco_object
+    - context59
+    - voc20
+    - coco_stuff
+    - cityscapes
+    - ade20k
+
+  # evaluation
+  voc: segmentation/configs/_base_/datasets/pascal_voc12.py
+  voc20: segmentation/configs/_base_/datasets/pascal_voc12_20.py
+  context: segmentation/configs/_base_/datasets/pascal_context.py
+  context59: segmentation/configs/_base_/datasets/pascal_context59.py
+  coco_stuff: segmentation/configs/_base_/datasets/stuff.py
+  coco_object: segmentation/configs/_base_/datasets/coco.py
+  cityscapes: segmentation/configs/_base_/datasets/cityscapes.py
+  ade20k: segmentation/configs/_base_/datasets/ade20k.py
+
