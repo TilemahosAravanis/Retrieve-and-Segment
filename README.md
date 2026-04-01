@@ -8,7 +8,7 @@
 [**Tilemachos Aravanis**](https://cmp.felk.cvut.cz/~aravatil/) · **Vladan Stojnić** · **Bill Psomas** · **Nikos Komodakis** · **Giorgos Tolias**
 
 <p align="center">
-  <img src="./assets/teaser.pdf" alt="Teaser image" width="90%">
+  <img src="./assets/teaser.png" alt="Teaser image" width="95%">
 </p>
 
 [![arXiv](https://img.shields.io/badge/arXiv-2602.23339-b31b1b.svg)](https://arxiv.org/abs/2602.23339)
