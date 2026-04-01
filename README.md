@@ -1,15 +1,21 @@
 <div align="center">
 
-# Retrieve and Segment
+# Retrieve and Segment (RNS)
 ## Are a Few Examples Enough to Bridge the Supervision Gap in Open-Vocabulary Segmentation?
 
 **CVPR 2026**
+
+[**Tilemachos Aravanis**](https://cmp.felk.cvut.cz/~aravatil/) · **Vladan Stojnić** · **Bill Psomas** · **Nikos Komodakis** · **Giorgos Tolias**
+
+<p align="center">
+  <img src="./assets/teaser.pdf" alt="Teaser image" width="90%">
+</p>
 
 [![arXiv](https://img.shields.io/badge/arXiv-2602.23339-b31b1b.svg)](https://arxiv.org/abs/2602.23339)
 
 </div>
 
-Official implementation of **Retrieve and Segment: Are a Few Examples Enough to Bridge the Supervision Gap in Open-Vocabulary Segmentation?**
+Official implementation of **Retrieve and Segment: Are a Few Examples Enough to Bridge the Supervision Gap in Open-Vocabulary Segmentation.**
 
 ---
 
@@ -17,6 +23,8 @@ Official implementation of **Retrieve and Segment: Are a Few Examples Enough to 
 
 Please follow the dataset download and preparation instructions from the
 [CLIP-DINOiser repository](https://github.com/wysoczanska/clip_dinoiser). Place the dataset folders under ./data directory.
+
+We currently support ```voc cityscapes ade20k coco_stuff coco_object context context59```
 
 ## Setup
 
@@ -63,6 +71,8 @@ torchrun --nproc_per_node=1 --nnodes=1 ./main_eval.py clip.yaml
 ## SAM2.1 Mask Proposals
 
 To use SAM2.1 as a Mask proposer please download ```sam2.1_hiera_large.pt``` from https://github.com/facebookresearch/sam2 and place it under ```./checkpoints``` directory. Masks are saved under ```./SAM_Masks``` and then reused.
+
+**Comment**: To construct the support sets in the full support experiments we used ```seeds=(100 18 42 84 92 256 512 1024)``` for ```voc cityscapes``` and ```seeds=(100 18 42 84)``` for the rest of the datasets. in the partial support experiments we used ```seeds=(100 18 42 84 92 128 256 512 1024 2048 5096 8192 16384 32768 65536 131072)``` for ```voc cityscapes``` and ```seeds=(100 18 42 84 92 256 512 1024)``` for the rest of the datasets. The seed for the support set sampling is set in the configs.
 
 ## Citation
 
