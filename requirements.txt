@@ -8,8 +8,12 @@ pyyaml
 hydra-core
 huggingface_hub
 open_clip_torch
-transformers==5.3.0
 einops
 ftfy
 regex
+omegaconf
+submitit
+termcolor
+torchmetrics
 yapf
+transformers==5.3.0

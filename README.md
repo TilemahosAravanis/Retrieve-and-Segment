@@ -54,7 +54,7 @@ pip install -r requirements.txt
 
 ## Run the Code
 
-## DINOv3.txt (ViT-L/16) as backbone
+### DINOv3.txt (ViT-L/16) as backbone
 
 ```bash
 torchrun --nproc_per_node=1 --nnodes=1 ./main_eval.py dinov3txt.yaml
@@ -62,17 +62,19 @@ torchrun --nproc_per_node=1 --nnodes=1 ./main_eval.py dinov3txt.yaml
 
 **Comment:** To use DINOv3.txt please paste your personal download URLs for the backbone weights (dinov3_vitl16_pretrain_lvd1689m) and the .txt model weights (dinov3_vitl16_dinotxt_vision_head_and_text_encoder) in ```models/dinov3_txt_ovss/dinov3_txt_ovss.py``` line 14.
 
-## OpenCLIP (ViT-B/16) as backbone
+### OpenCLIP (ViT-B/16) as backbone
 
 ```bash
 torchrun --nproc_per_node=1 --nnodes=1 ./main_eval.py clip.yaml
 ```
 
-## SAM2.1 Mask Proposals
+### SAM2.1 Mask Proposals
 
-To use SAM2.1 as a Mask proposer please download ```sam2.1_hiera_large.pt``` from https://github.com/facebookresearch/sam2 and place it under ```./checkpoints``` directory. Masks are saved under ```./SAM_Masks``` and then reused.
+To add SAM2.1 as a Mask proposer please download ```sam2.1_hiera_large.pt``` from https://github.com/facebookresearch/sam2 and place it under ```./checkpoints``` directory. You should also add ```SAM``` in ```model.backbones``` list within the config. Masks are saved under ```./SAM_Masks``` and then reused.
 
-**Comment**: To construct the support sets in the full support experiments we used ```seeds=(100 18 42 84 92 256 512 1024)``` for ```voc cityscapes``` and ```seeds=(100 18 42 84)``` for the rest of the datasets. in the partial support experiments we used ```seeds=(100 18 42 84 92 128 256 512 1024 2048 5096 8192 16384 32768 65536 131072)``` for ```voc cityscapes``` and ```seeds=(100 18 42 84 92 256 512 1024)``` for the rest of the datasets. The seed for the support set sampling is set in the configs.
+## Reproduction
+
+To construct the support sets in the full support experiments we used ```seeds=(100 18 42 84 92 256 512 1024)``` for ```voc cityscapes``` and ```seeds=(100 18 42 84)``` for the rest of the datasets. in the partial support experiments we used ```seeds=(100 18 42 84 92 128 256 512 1024 2048 5096 8192 16384 32768 65536 131072)``` for ```voc cityscapes``` and ```seeds=(100 18 42 84 92 256 512 1024)``` for the rest of the datasets. The seed for the support set sampling is set in the configs.
 
 ## Citation
 

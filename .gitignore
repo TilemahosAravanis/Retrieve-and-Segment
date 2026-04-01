@@ -1,5 +1,5 @@
 # Repo files/folders to exclude from git tracking
-data/
+./data/
 log.txt
 /SAM_Masks/
 
@@ -127,7 +127,6 @@ celerybeat.pid
 # Environments
 .env
 .venv
-env/
 venv/
 ENV/
 env.bak/
