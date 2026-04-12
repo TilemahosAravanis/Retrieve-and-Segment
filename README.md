@@ -3,7 +3,7 @@
 # Retrieve and Segment (RNS)
 ## Are a Few Examples Enough to Bridge the Supervision Gap in Open-Vocabulary Segmentation?
 
-**CVPR 2026**
+**CVPR 2026 - Highlight 🌟⭐🌟**
 
 [**Tilemachos Aravanis**](https://cmp.felk.cvut.cz/~aravatil/) · **Vladan Stojnić** · **Bill Psomas** · **Nikos Komodakis** · **Giorgos Tolias**
 
