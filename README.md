@@ -5,7 +5,7 @@
 
 **CVPR 2026 - Highlight 🌟⭐🌟**
 
-[**Tilemachos Aravanis**](https://cmp.felk.cvut.cz/~aravatil/) · **Vladan Stojnić** · **Bill Psomas** · **Nikos Komodakis** · **Giorgos Tolias**
+[**Tilemachos Aravanis**](https://cmp.felk.cvut.cz/~aravatil/) · [**Vladan Stojnić**](https://stojnicv.xyz/) · [**Bill Psomas**](https://billpsomas.github.io/) · [**Nikos Komodakis**](https://www.csd.uoc.gr/~komod/) · [**Giorgos Tolias**](https://cmp.felk.cvut.cz/~toliageo/)
 
 <p align="center">
   <img src="./assets/teaser.png" alt="Teaser image" width="95%">
