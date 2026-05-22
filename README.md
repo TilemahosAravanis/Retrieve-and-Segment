@@ -11,6 +11,7 @@
   <img src="./assets/teaser.png" alt="Teaser image" width="95%">
 </p>
 
+[![Project Page](https://img.shields.io/badge/-Project_Page-green.svg?colorA=333&logo=html5)](https://vrg.fel.cvut.cz/rns/)
 [![arXiv](https://img.shields.io/badge/arXiv-2602.23339-b31b1b.svg)](https://arxiv.org/abs/2602.23339)
 
 </div>
