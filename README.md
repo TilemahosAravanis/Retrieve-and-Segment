@@ -97,5 +97,5 @@ This project builds upon the following open-source projects and pretrained model
 In particular, we acknowledge:
 
 - [CLIP-DINOiser](https://github.com/wysoczanska/clip_dinoiser)
-- [SAM3](https://github.com/facebookresearch/sam3)
+- [SAM2](https://github.com/facebookresearch/sam2)
 - [DINOv3](https://github.com/facebookresearch/dinov3)
