@@ -92,10 +92,24 @@ If you find this repository useful, please cite:
 
 ## Acknowledgements
 
-This project builds upon the following open-source projects and pretrained models. We thank the authors for making their code and models publicly available.
+### Code and models
 
-In particular, we acknowledge:
+This project builds upon the following open-source projects and pretrained models. We thank the authors for making their code and models publicly available.
 
 - [CLIP-DINOiser](https://github.com/wysoczanska/clip_dinoiser)
 - [SAM2](https://github.com/facebookresearch/sam2)
 - [DINOv3](https://github.com/facebookresearch/dinov3)
+
+### Funding
+
+This work was supported by:
+
+- [Czech Technical University in Prague](https://www.cvut.cz/en), grant No. SGS23/173/OHK3/3T/13
+- The EU [Horizon Europe](https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en) programme, [MSCA Postdoctoral Fellowship RAVIOLI](https://cordis.europa.eu/project/id/101205297) (No. 101205297)
+- The [Junior Star grant](https://starfos.tacr.cz/en/vysledky-vyzkumu?query=skbyaadwnkha) GM 21-28830M of the [Czech Science Foundation (GAČR)](https://gacr.cz/en/)
+
+### Computational resources
+
+We acknowledge [VSB – Technical University of Ostrava](https://www.vsb.cz/en) and [IT4Innovations National Supercomputing Center](https://www.it4i.cz/en), Czech Republic, for awarding this project (OPEN-33-67) access to the [LUMI supercomputer](https://www.lumi-supercomputer.eu/), owned by the [EuroHPC Joint Undertaking](https://eurohpc-ju.europa.eu/), hosted by [CSC](https://csc.fi/en/) (Finland) and the LUMI consortium, through the [Ministry of Education, Youth and Sports of the Czech Republic](https://msmt.gov.cz/) via the [e-INFRA CZ](https://www.e-infra.cz/en) project (ID: 90254).
+
+The access to the computational infrastructure of the OP VVV funded project CZ.02.1.01/0.0/0.0/16_019/0000765 [“Research Center for Informatics”](https://rci.cvut.cz/) is also gratefully acknowledged.
